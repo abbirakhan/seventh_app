@@ -44,7 +44,9 @@ class _PersonalInfoState extends State<PersonalInfo> {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [Image.asset('assets/images/topRight.png'),],
+              children: [
+                Image.asset('assets/images/topRight.png'),
+              ],
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
@@ -71,9 +73,12 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     SizedBox(
                       height: 55,
                       child: Container(
-                        decoration: BoxDecoration(color: Color(0xffF1F1F1),borderRadius: BorderRadius.circular(4.r)),
+                        decoration: BoxDecoration(
+                            color: Color(0xffF1F1F1),
+                            borderRadius: BorderRadius.circular(4.r)),
                         child: CheckboxListTile(
                           //checkbox positioned at right
+
                           value: check2,
                           onChanged: (bool? value) {
                             setState(() {
